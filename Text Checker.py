@@ -4,6 +4,7 @@
 # Text Checker is a simple program to count and finder letters and words in a text file
 # It only works on .txt file. For other formats may be updated in future. Stay tuned.
 
+# Import module
 import os
 
 
@@ -89,7 +90,7 @@ while True:
     if choice == '5':
         print()
         print("EXIT".center(50, "*"))
-        exit(1)
+        exit(0)
 
     cont = input("\nPress enter to continue...")
-    os.system("cls")
+    os.system('cls' if os.name=='nt' else 'clear')
