@@ -106,4 +106,4 @@ while True:
         exit(0)
 
     input("\nPress enter to continue...")
-    os.system("cls")
+    os.system("cls" if os.name="nt" else "clear")
